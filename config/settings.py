@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'django_extensions',
 
     'images',
-    'easy_thumbnails'
+    'easy_thumbnails',
+    'actions',
 ]
 
 MIDDLEWARE = [
@@ -168,7 +169,7 @@ SOCIAL_AUTH_PIPELINE = [
      'social_core.pipeline.social_auth.associate_user',
      'social_core.pipeline.social_auth.load_extra_data',
      'social_core.pipeline.user.user_details',
-     'actions.apps.ActionsConfig',
+
 ]
 
 ABSOLUTE_URL_OVERRIDES = {
